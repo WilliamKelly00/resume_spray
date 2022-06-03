@@ -3,57 +3,12 @@
         "generator" : "Khronos glTF Blender I/O v1.8.19",
         "version" : "2.0"
     },
-    "extensionsUsed" : [
-        "KHR_lights_punctual"
-    ],
-    "extensionsRequired" : [
-        "KHR_lights_punctual"
-    ],
-    "extensions" : {
-        "KHR_lights_punctual" : {
-            "lights" : [
-                {
-                    "color" : [
-                        1,
-                        1,
-                        1
-                    ],
-                    "intensity" : 1,
-                    "type" : "directional",
-                    "name" : "Sun"
-                },
-                {
-                    "color" : [
-                        1,
-                        1,
-                        1
-                    ],
-                    "intensity" : 1,
-                    "type" : "directional",
-                    "name" : "Sun.001"
-                },
-                {
-                    "color" : [
-                        1,
-                        1,
-                        1
-                    ],
-                    "intensity" : 1,
-                    "type" : "directional",
-                    "name" : "Sun.002"
-                }
-            ]
-        }
-    },
     "scene" : 0,
     "scenes" : [
         {
             "name" : "Scene",
             "nodes" : [
-                0,
-                2,
-                4,
-                6
+                0
             ]
         }
     ],
@@ -66,114 +21,6 @@
                 0.2541905641555786,
                 0.2541905641555786
             ]
-        },
-        {
-            "extensions" : {
-                "KHR_lights_punctual" : {
-                    "light" : 0
-                }
-            },
-            "name" : "Sun_Orientation",
-            "rotation" : [
-                -0.7071067690849304,
-                0,
-                0,
-                0.7071067690849304
-            ]
-        },
-        {
-            "children" : [
-                1
-            ],
-            "name" : "Sun",
-            "rotation" : [
-                0.34593692421913147,
-                0.32801395654678345,
-                0.6486659646034241,
-                -0.5932680368423462
-            ],
-            "scale" : [
-                1,
-                1,
-                63.290042877197266
-            ],
-            "translation" : [
-                2.548164129257202,
-                -0.045836299657821655,
-                0.031118854880332947
-            ]
-        },
-        {
-            "extensions" : {
-                "KHR_lights_punctual" : {
-                    "light" : 1
-                }
-            },
-            "name" : "Sun.001_Orientation",
-            "rotation" : [
-                -0.7071067690849304,
-                0,
-                0,
-                0.7071067690849304
-            ]
-        },
-        {
-            "children" : [
-                3
-            ],
-            "name" : "Sun.001",
-            "rotation" : [
-                0.1782839596271515,
-                -0.44213157892227173,
-                0.3140279948711395,
-                0.8210486769676208
-            ],
-            "scale" : [
-                1,
-                1,
-                63.290042877197266
-            ],
-            "translation" : [
-                -1.1510018110275269,
-                1.3952211141586304,
-                0.03939026594161987
-            ]
-        },
-        {
-            "extensions" : {
-                "KHR_lights_punctual" : {
-                    "light" : 2
-                }
-            },
-            "name" : "Sun.002_Orientation",
-            "rotation" : [
-                -0.7071067690849304,
-                0,
-                0,
-                0.7071067690849304
-            ]
-        },
-        {
-            "children" : [
-                5
-            ],
-            "name" : "Sun.002",
-            "rotation" : [
-                0.5144429206848145,
-                0.0013992817839607596,
-                0.8574900031089783,
-                -0.007590798195451498
-            ],
-            "scale" : [
-                1,
-                1,
-                63.290042877197266
-            ],
-            "translation" : [
-                -0.06886150687932968,
-                -1.044022798538208,
-                0.029782261699438095
-            ]
         }
     ],
     "materials" : [
@@ -181,6 +28,12 @@
             "doubleSided" : true,
             "name" : "Material",
             "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    1,
+                    1,
+                    1,
+                    23.30708885192871
+                ],
                 "baseColorTexture" : {
                     "index" : 0
                 },
