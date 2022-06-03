@@ -29,18 +29,25 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <link rel='icon' type='image/png' sizes='96x96' href='favicon-96x96.png'>
     <link rel='stylesheet' href='css/common.css'>
 
-    <title>Resume Spray</title>
+    <title>AR portfolio</title>
   </head>
   <body>
+    <div class="container">
     <header>
-      <details open>
-        <summary>Resume Spray</summary>
-        <p>
-          This sample demonstrates the use of hit testing to place virtual objects on real-world surfaces. With my resume.
-        </p>
-      </details>
-    </header>
-    <script type="module">
+        <div class="left box">
+          <h1>AR portfolio</h1>
+          <p>
+            An interactive augmented reality experience exploring my portfolio.
+          </p>
+        </div>
+      </header>
+        <div class="right box">
+          <h1>See more</h1>
+          <p>website</p>
+          <p>github</p>
+        </div>
+      </div>
+      <script type="module">
       import {WebXRButton} from './js/util/webxr-button.js';
       import {Scene} from './js/render/scenes/scene.js';
       import {Renderer, createWebGLContext} from './js/render/core/renderer.js';
@@ -73,6 +80,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
       reticle.visible = false;
       scene.addNode(reticle);
+
+      let solarSystem = new Gltf2Node({url: 'media/gltf/space/space.gltf'});
+      // The solar system is big (citation needed). Scale it down so that users
+      // can move around the planets more easily.
+      solarSystem.scale = [0.1, 0.1, 0.1];
+      scene.addNode(solarSystem);
 
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
