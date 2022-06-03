@@ -43,8 +43,14 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       </header>
         <div class="right box">
           <h1>See more</h1>
-          <p>website</p>
-          <p>github</p>
+          <div class="links">
+            <p>website: </p>
+            <a href="https://www.willkelly.tech/">WillKelly.tech</a>
+          </div>
+          <div class="links">
+            <p>github</p>
+            <a href="https://github.com/WilliamKelly00">WilliamKelly00</a>
+          </div>
         </div>
       </div>
       <script type="module">
@@ -84,13 +90,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let solarSystem = new Gltf2Node({url: 'media/gltf/space/space.gltf'});
       // The solar system is big (citation needed). Scale it down so that users
       // can move around the planets more easily.
-      solarSystem.scale = [0.1, 0.1, 0.1];
+      solarSystem.scale = [0.15, 0.15, 0.15];
       scene.addNode(solarSystem);
 
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
       let shadow = new DropShadowNode();
-      vec3.set(shadow.scale, 0.15, 0.15, 0.15);
+      vec3.set(shadow.scale, 0.1, 0.1, 0.1);
       arObject.addNode(shadow);
 
       const MAX_RESUMES = 30;

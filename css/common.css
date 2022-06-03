@@ -1,5 +1,5 @@
 body {
-  background-color: #F0F0F0;
+  background-color: #252525f5;
   font: 1rem/1.4 -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans,
@@ -18,8 +18,7 @@ header {
   border-radius: 2px; */
   color: rgb(31, 31, 31);
 
-  background-image: linear-gradient(to right bottom, #ffffff, #faf7ff, #f7efff, #f6e7ff, #f6deff, #f6d5ff, #f7ccfe, #f9c3fc, #f8b8fc, #f7adfd, #f6a1fd, #f595fd);
-
+  background-image: linear-gradient(to right top, #ffffff, #f8f8fe, #f0f1fe, #e6eafe, #dbe4fe, #d1e4ff, #c5e4ff, #b9e4ff, #adeaff, #a1efff, #98f4fd, #94f9f5);  
   /* background-image: linear-gradient(to right bottom, #f5c0f9, #f6bdfa, #f7bafc, #f8b7fd, #f9b4fe, #f9adfe, #faa6ff, #fa9fff, #f992ff, #f785ff, #f576ff, #f367ff);  font-size: 1.0em; */
   font-weight: bold;
 }
@@ -99,4 +98,37 @@ canvas {
   padding: 0.5em;
   color: white;
   background-color: #242424;
+}
+
+.links{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.links a{
+  font-weight: 700;
+  margin-left: 20px;
+  /* background-image: linear-gradient(to right, #ff69ff, #e768ff, #cf67ff, #b566fd, #9965fa, #8c5ffa, #7e5af9, #6e55f9, #6f49fc, #713bfd, #7529ff, #7900ff);  */
+  background-image: linear-gradient(to right bottom, #ffd8ff, #f0b8fa, #db99f8, #c17cf8, #9e61fa, #8f56fb, #7d4bfd, #6841ff, #753fff, #813dff, #8c3aff, #9637ff);  
+  
+  
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+  animation: text-bg-animation 4s ease-in-out infinite alternate;
+}
+
+@keyframes text-bg-animation {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
 }
