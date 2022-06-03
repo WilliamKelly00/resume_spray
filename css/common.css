@@ -13,13 +13,14 @@ header {
   text-align: left;
   max-width: 420px;
   padding: 0.5em;
-  background-color: rgba(255, 255, 255, 0.90);
-  margin-bottom: 0.5em;
-  border-radius: 2px;
-}
+  /* background-color: rgba(255, 255, 255, 0.90); */
+  /* margin-bottom: 0.5em;
+  border-radius: 2px; */
+  color: rgb(31, 31, 31);
 
-details summary {
-  font-size: 1.0em;
+  background-image: linear-gradient(to right bottom, #ffffff, #faf7ff, #f7efff, #f6e7ff, #f6deff, #f6d5ff, #f7ccfe, #f9c3fc, #f8b8fc, #f7adfd, #f6a1fd, #f595fd);
+
+  /* background-image: linear-gradient(to right bottom, #f5c0f9, #f6bdfa, #f7bafc, #f8b7fd, #f9b4fe, #f9adfe, #faa6ff, #fa9fff, #f992ff, #f785ff, #f576ff, #f367ff);  font-size: 1.0em; */
   font-weight: bold;
 }
 
@@ -78,4 +79,24 @@ canvas {
   font-size: 18px;
   color: rgb(80, 168, 252);
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box{
+  max-width: 420px;
+}
+
+.right{
+  position: relative;
+  z-index: 2;
+  left: 0px;
+  text-align: left;
+  max-width: 420px;
+  padding: 0.5em;
+  color: white;
+  background-color: #242424;
 }
